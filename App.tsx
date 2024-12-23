@@ -334,6 +334,7 @@ import LoginScreen from './LoginScreen';
 import HomeScreen from './HomeScreen';
 import Register from './Register';
 import ForgotScreen from './ForgotScreen';
+import ResetPassword from './ResetPassword';
 
 const Stack = createStackNavigator();
 
@@ -345,6 +346,7 @@ const App = () => {
         <Stack.Screen name="Register" component={Register} />
         <Stack.Screen name="Home" component={HomeScreen}/>
         <Stack.Screen name="ForgotScreen" component={ForgotScreen}/>
+        <Stack.Screen name="ResetPassword" component={ResetPassword}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
