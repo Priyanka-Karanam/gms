@@ -324,67 +324,94 @@
 // export default LoginScreen;
 //--------------------------------------------------------------
 //***GMS App Register */
-// import React from 'react';
-// import { NavigationContainer } from '@react-navigation/native';
-// import { createStackNavigator } from '@react-navigation/stack';
-// // import LoginPage from './LoginScreen';  // Import the LoginPage
-// // import SignUpPage from './Register';
-// // import HomePage from './HomeScreen';    // Import the HomePage
-// import LoginScreen from './LoginScreen';
-// import HomeScreen from './HomeScreen';
-// import Register from './Register';
-// import ForgotScreen from './ForgotScreen';
-// import ResetPassword from './ResetPassword';
-
-// const Stack = createStackNavigator();
-
-// const App = () => {
-//   return (
-//     <NavigationContainer>
-//       <Stack.Navigator initialRouteName="Login">
-//         <Stack.Screen name="Login" component={LoginScreen} />
-//         <Stack.Screen name="Register" component={Register} />
-//         <Stack.Screen name="Home" component={HomeScreen}/>
-//         <Stack.Screen name="ForgotScreen" component={ForgotScreen}/>
-//         <Stack.Screen name="ResetPassword" component={ResetPassword}/>
-//       </Stack.Navigator>
-//     </NavigationContainer>
-//   );
-// };
-
-// export default App;
-//**----------------------------------------------------------------- */
-//DashBoard//
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import Homepage from './dashBoard/Homepage';
-import AddCar from './dashBoard/AddCar';
-import ManageServices from './dashBoard/ManageServices';
-import ManageCars from './dashBoard/ManageCars';
-import Cars from './dashBoard/Cars';
-import CustomerFeedback from  './dashBoard/CustomerFeedback';
-// import Dashboard from './dashBoard/Dashboard';
+// import LoginPage from './LoginScreen';  // Import the LoginPage
+// import SignUpPage from './Register';
+// import HomePage from './HomeScreen';    // Import the HomePage
+import LoginScreen from './LoginScreen';
+import HomeScreen from './HomeScreen';
+import Register from './Register';
+import ForgotScreen from './ForgotScreen';
+import ResetPassword from './ResetPassword';
+import Inventory from './Inventory';
+import AdminDashboard from './AdminDashboard';
+import Quatations from './Quatations';
+import Invoices from './Invoices';
+import Vehicles from './Vehicles';
+import Services from './Services';
+import Users from './Users';
+import JobCard from './Jobcard';
+import Sales from './Sales';
+import Remainders from './Remainders';
+import Reports from './Reports';
+import Dashboard from './Dashboard';
+
+
 const Stack = createStackNavigator();
 
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="HomePage">
-        <Stack.Screen name="HomePage" component={Homepage} />
-        <Stack.Screen name="AddCar" component={AddCar} />
-        <Stack.Screen name="ManageServices" component={ManageServices} />
-        <Stack.Screen name="Cars" component={Cars} />
-        <Stack.Screen name="ManageCars" component={ManageCars}/>
-        <Stack.Screen name="CustomerFeedback" component={CustomerFeedback} />
-        {/* <Stack.Screen name="Dashboard" component={Dashboard} />
-         */}
+      <Stack.Navigator initialRouteName="Login">
+        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="Register" component={Register} />
+        <Stack.Screen name="Home" component={HomeScreen}/>
+        <Stack.Screen name="ForgotScreen" component={ForgotScreen}/>
+        <Stack.Screen name="ResetPassword" component={ResetPassword}/>
+        <Stack.Screen name="AdminDashboard" component={AdminDashboard}/>
+        <Stack.Screen name="Inventory" component={Inventory}/>
+        <Stack.Screen name="Users" component={Users} />
+        <Stack.Screen name="Services" component={Services} />
+        <Stack.Screen name="JobCard" component={JobCard} />
+        <Stack.Screen name="Invoices" component={Invoices} />
+        <Stack.Screen name="Reports" component={Reports} />
+        <Stack.Screen name="Remainders" component={Remainders} />
+        <Stack.Screen name="Vehicles" component={Vehicles} />
+        <Stack.Screen name="Quotations" component={Quatations} />
+        <Stack.Screen name="Sales" component={Sales} />
+        <Stack.Screen name="Dashboard" component={Dashboard} />
+
+
       </Stack.Navigator>
     </NavigationContainer>
   );
 };
 
-export default App;
+export default App;
+//**----------------------------------------------------------------- */
+//DashBoard//
+// import React from 'react';
+// import { NavigationContainer } from '@react-navigation/native';
+// import { createStackNavigator } from '@react-navigation/stack';
+// import Homepage from './dashBoard/Homepage';
+// import AddCar from './dashBoard/AddCar';
+// import ManageServices from './dashBoard/ManageServices';
+// import ManageCars from './dashBoard/ManageCars';
+// import Cars from './dashBoard/Cars';
+// import CustomerFeedback from  './dashBoard/CustomerFeedback';
+// // import Dashboard from './dashBoard/Dashboard';
+// const Stack = createStackNavigator();
+
+// const App = () => {
+//   return (
+//     <NavigationContainer>
+//       <Stack.Navigator initialRouteName="HomePage">
+//         <Stack.Screen name="HomePage" component={Homepage} />
+//         <Stack.Screen name="AddCar" component={AddCar} />
+//         <Stack.Screen name="ManageServices" component={ManageServices} />
+//         <Stack.Screen name="Cars" component={Cars} />
+//         <Stack.Screen name="ManageCars" component={ManageCars}/>
+//         <Stack.Screen name="CustomerFeedback" component={CustomerFeedback} />
+//         {/* <Stack.Screen name="Dashboard" component={Dashboard} />
+//          */}
+//       </Stack.Navigator>
+//     </NavigationContainer>
+//   );
+// };
+
+// export default App;
    
 
 // import React from 'react';
