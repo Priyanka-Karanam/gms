@@ -337,16 +337,18 @@ import ForgotScreen from './ForgotScreen';
 import ResetPassword from './ResetPassword';
 import Inventory from './Inventory';
 import AdminDashboard from './AdminDashboard';
-import Quatations from './Quatations';
+import Quotation from './Quotation';
 import Invoices from './Invoices';
 import Vehicles from './Vehicles';
 import Services from './Services';
 import Users from './Users';
-import JobCard from './Jobcard';
+import JobCard from './JobCard';
 import Sales from './Sales';
-import Remainders from './Remainders';
+import Reminders from './Reminders';
 import Reports from './Reports';
-import Dashboard from './Dashboard';
+import Accounts from './Accounts';
+import Compliances from './Compliances';
+
 
 
 const Stack = createStackNavigator();
@@ -367,11 +369,13 @@ const App = () => {
         <Stack.Screen name="JobCard" component={JobCard} />
         <Stack.Screen name="Invoices" component={Invoices} />
         <Stack.Screen name="Reports" component={Reports} />
-        <Stack.Screen name="Remainders" component={Remainders} />
+        <Stack.Screen name="Reminders" component={Reminders} />
         <Stack.Screen name="Vehicles" component={Vehicles} />
-        <Stack.Screen name="Quotations" component={Quatations} />
+        <Stack.Screen name="Quotation" component={Quotation} />
         <Stack.Screen name="Sales" component={Sales} />
-        <Stack.Screen name="Dashboard" component={Dashboard} />
+        <Stack.Screen name="Accounts" component={Accounts} />
+        <Stack.Screen name="Compliances" component={Compliances} />
+        {/* <Stack.Screen name="Dashboard" component={Dashboard} /> */}
 
 
       </Stack.Navigator>
