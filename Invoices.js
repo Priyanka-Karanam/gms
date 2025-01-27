@@ -1,29 +1,13 @@
-// import React from "react";
-// import {View,Text,StyleSheet} from "react-native";
-// const Invoices =()=>{
-//     return(
-//         <View style={styles.conatiner}>
-//             <Text>Invoices</Text>
-//         </View>
-//     )
-// }
-// const styles=StyleSheet.create({
-//     conatiner:{
-//         flex: 1,
-//         justifyContent: 'center',
-//         alignItems: 'center',
-//     }
-// })
-// export default Invoices;
-//------------------------------------------------------------------
+
 import React from "react";
 import { View, Text, StyleSheet, FlatList, TouchableOpacity } from "react-native";
 
 const Invoices = () => {
   const invoicesData = [
-    { id: "1", number: "INV-001", customer: "John Doe", amount: "$200", status: "Paid" },
-    { id: "2", number: "INV-002", customer: "Jane Smith", amount: "$350", status: "Pending" },
-    { id: "3", number: "INV-003", customer: "Emily Johnson", amount: "$120", status: "Overdue" },
+    { id: "1", number: "INV-001", customer: "Vinay", amount: "$200", status: "Paid" },
+    { id: "2", number: "INV-002", customer: "Vyshnavi", amount: "$350", status: "Pending" },
+    { id: "3", number: "INV-003", customer: "Priya", amount: "$120", status: "Overdue" },
+    { id: "4", number: "INV-004", customer: "Swamy", amount: "$100", status: "Paid" },
   ];
 
   const renderInvoiceItem = ({ item }) => (

@@ -1,21 +1,4 @@
-// import React from "react";
-// import {View,Text,StyleSheet} from "react-native";
-// const Accounts=()=>{
-//     return(
-//         <View style={styles.conatiner}>
-//             <Text>Accounts</Text>
-//         </View>
-//     )
-// }
-// const styles=StyleSheet.create({
-//     conatiner:{
-//         flex: 1,
-//         justifyContent: 'center',
-//         alignItems: 'center',
-//     }
-// })
-// export default Accounts;
-//---------------------------------------------------------------
+
 import React, { useState } from "react";
 import { View, Text, StyleSheet, Button, FlatList, Alert, TextInput } from "react-native";
 

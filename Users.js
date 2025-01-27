@@ -1,29 +1,12 @@
-// import React from "react";
-// import {View,Text,StyleSheet} from "react-native";
-// const Users =()=>{
-//     return(
-//         <View style={styles.conatiner}>
-//             <Text>Users</Text>
-//         </View>
-//     )
-// }
-// const styles=StyleSheet.create({
-//     conatiner:{
-//         flex: 1,
-//         justifyContent: 'center',
-//         alignItems: 'center',
-//     }
-// })
-// export default Users;
-//-----------------------------------------------------
+
 import React from "react";
 import { View, Text, StyleSheet, FlatList, TouchableOpacity } from "react-native";
 
 const Users = () => {
   const usersData = [
     { id: "1", name: "Vinay", role: "Customer" },
-    { id: "2", name: "vyshnavi", role: "Mechanic" },
-    { id: "3", name: "Priyaa", role: "Manager" },
+    { id: "2", name: "vyshnavi", role: "Customer" },
+    { id: "3", name: "Priyaa", role: "Customer" },
     { id: "4", name: "swamy", role: "Customer" },
   ];
 
